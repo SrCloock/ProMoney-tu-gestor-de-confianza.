@@ -1,0 +1,87 @@
+.improves-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 40px;
+  margin-top: 60px;
+  margin-bottom: 80px;
+  background-color: #f7f9fa;
+}
+
+.improves-container h1 {
+  margin-bottom: 35px;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #333;
+}
+
+.improves-container p {
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #555;
+}
+
+.improves-container ul {
+  max-width: 800px;
+  margin: 0 auto;
+  list-style-type: none;
+  padding: 0;
+}
+
+.improves-container ul li {
+  background-color: #e8f4f8;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 1.3rem;
+  color: #333;
+  position: relative;
+}
+
+.improves-container ul li::before {
+  content: "🚀";
+  position: absolute;
+  left: -40px;
+  top: 20px;
+  font-size: 1.5rem;
+}
+
+.improves-container ul li:hover {
+  background-color: #d9eff5;
+}
+
+.improves-container ul li:last-child {
+  margin-bottom: 0;
+}
+
+.improves-container li h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #007b8f;
+}
+
+.improves-container li p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .improves-container {
+    padding: 20px;
+  }
+
+  .improves-container h1 {
+    font-size: 2rem;
+  }
+
+  .improves-container p {
+    font-size: 1.3rem;
+  }
+
+  .improves-container ul li {
+    font-size: 1.1rem;
+    padding: 15px;
+  }
+}

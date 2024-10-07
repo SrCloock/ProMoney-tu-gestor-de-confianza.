@@ -1,0 +1,213 @@
+/* Contenedor principal de categorías */
+.categories-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 40px;
+  background-color: #f0f4f8;
+  font-family: 'Roboto', sans-serif;
+  align-items: center; /* Centra horizontalmente todo el contenido */
+}
+
+/* Título principal */
+.categories-container h1 {
+  font-size: 2.4rem;
+  padding: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #333;
+  font-weight: 700;
+}
+
+/* Formulario de categorías */
+.category-form {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  margin-bottom: 30px;
+  max-width: 500px; /* Reducido el ancho máximo */
+  width: 100%; /* Asegura que el formulario use todo el ancho disponible hasta el máximo */
+}
+
+/* Agrupación de campos del formulario */
+.form-group {
+  margin-bottom: 16px; /* Reducido el espacio entre los campos */
+}
+
+/* Estilos para las etiquetas del formulario */
+.form-group label {
+  display: block;
+  margin-bottom: 8px; /* Reducido el espacio debajo de la etiqueta */
+  font-weight: 500;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+/* Estilos para los campos de entrada y selección */
+.form-group input, .form-group select {
+  width: 100%;
+  padding: 10px; /* Reducido el padding */
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus, .form-group select:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+.submit-button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  background-color: #4caf50;
+  color: white;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+  transform: scale(1.02);
+}
+
+
+.category-tables {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+
+.category-column {
+  flex: 1 1 250px;
+  min-width: 280px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+  margin-bottom: 30px;
+}
+
+.category-column:hover {
+  transform: translateY(-5px);
+}
+
+
+.category-column h3 {
+  margin-top: 0;
+  font-size: 1.6rem;
+  color: #333;
+  font-weight: 600;
+}
+
+
+.category-item {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid #e0e4e8;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  background-color: #ffffff;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.category-item:hover {
+  background-color: #f9fafb;
+  transform: scale(1.02);
+}
+
+.category-icon {
+  font-size: 1.8rem;
+  margin-right: 12px;
+  color: #888;
+}
+
+.category-name {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+
+.ReactModal__Overlay {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.ReactModal__Content {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  width: 400px;
+  max-width: 90%;
+  margin: auto;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+
+.ReactModal__Content h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: 700;
+}
+
+
+.modal-form .button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.modal-form button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  width: 100%;
+  max-width: 180px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.submit-button {
+  background-color: #4caf50;
+  color: white;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+  transform: scale(1.02);
+}
+
+.delete-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #c62828;
+  transform: scale(1.02);
+}
+
+.close-button {
+  background-color: #9e9e9e;
+  color: white;
+}
+
+.close-button:hover {
+  background-color: #757575;
+  transform: scale(1.02);
+}
