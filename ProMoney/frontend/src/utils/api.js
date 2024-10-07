@@ -1,6 +1,5 @@
 import axios from 'axios';
 
-// Endpoints de la API
 const EXPENSES_URL = 'http://localhost:5000/api/expenses';
 const SAVINGS_URL = 'http://localhost:5000/api/savings';
 const INCOMES_URL = 'http://localhost:5000/api/incomes';

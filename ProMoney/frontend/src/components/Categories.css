@@ -1,4 +1,4 @@
-/* Contenedor principal de categorías */
+
 .categories-container {
   display: flex;
   flex-direction: column;
@@ -6,10 +6,10 @@
   padding: 40px;
   background-color: #f0f4f8;
   font-family: 'Roboto', sans-serif;
-  align-items: center; /* Centra horizontalmente todo el contenido */
+  align-items: center;
 }
 
-/* Título principal */
+
 .categories-container h1 {
   font-size: 2.4rem;
   padding: 30px;
@@ -19,35 +19,35 @@
   font-weight: 700;
 }
 
-/* Formulario de categorías */
+
 .category-form {
   background: #ffffff;
   padding: 15px;
   border-radius: 12px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
   margin-bottom: 30px;
-  max-width: 500px; /* Reducido el ancho máximo */
-  width: 100%; /* Asegura que el formulario use todo el ancho disponible hasta el máximo */
+  max-width: 500px;
+  width: 100%;
 }
 
-/* Agrupación de campos del formulario */
+
 .form-group {
-  margin-bottom: 16px; /* Reducido el espacio entre los campos */
+  margin-bottom: 16px;
 }
 
-/* Estilos para las etiquetas del formulario */
+
 .form-group label {
   display: block;
-  margin-bottom: 8px; /* Reducido el espacio debajo de la etiqueta */
+  margin-bottom: 8px;
   font-weight: 500;
   color: #555;
   font-size: 1.1rem;
 }
 
-/* Estilos para los campos de entrada y selección */
+
 .form-group input, .form-group select {
   width: 100%;
-  padding: 10px; /* Reducido el padding */
+  padding: 10px;
   border: 1px solid #d1d5db;
   border-radius: 8px;
   font-size: 1rem;
