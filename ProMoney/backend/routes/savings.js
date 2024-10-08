@@ -4,7 +4,7 @@ const Savings = require('../models/Savings');
 
 router.get('/', async (req, res) => {
   try {
-    const savings = await Savings.find().populate('category'); // Incluye la categoría
+    const savings = await Savings.find().populate('category');
     res.json(savings);
   } catch (error) {
     res.status(500).json({ message: error.message });
@@ -13,7 +13,7 @@ router.get('/', async (req, res) => {
 
 router.post('/', async (req, res) => {
   const { description, amount, date, category } = req.body;
-  const newSaving = new Savings({ // Cambiar 'expense' a 'newSaving'
+  const newSaving = new Savings({
     description,
     amount,
     date,
@@ -21,7 +21,7 @@ router.post('/', async (req, res) => {
   });
 
   try {
-    const savedSaving = await newSaving.save(); // Cambiar 'saving' a 'newSaving'
+    const savedSaving = await newSaving.save();
     res.status(201).json(savedSaving);
   } catch (error) {
     res.status(400).json({ message: error.message });
@@ -46,7 +46,7 @@ router.put('/:id', async (req, res) => {
     saving.description = req.body.description || saving.description;
     saving.amount = req.body.amount || saving.amount;
     saving.date = req.body.date || saving.date;
-    saving.category = req.body.category || saving.category; // Asegúrate de actualizar la categoría
+    saving.category = req.body.category || saving.category;
 
     const updatedSaving = await saving.save();
     res.json(updatedSaving);

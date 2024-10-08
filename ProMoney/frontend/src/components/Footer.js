@@ -10,13 +10,13 @@ const Footer = () => {
       <div className="footer-content">
         <p>© 2024 ProMoney, tu gestor de confianza. Todos los derechos reservados.</p>
         <div className="social-icons">
-          <a href="https://www.twitch.tv/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.twitch.tv/srcloock" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faTwitch} size="lg" />
           </a>
-          <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/SrCloock" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faGithub} size="lg" />
           </a>
-          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/sr.cloock/" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faInstagram} size="lg" />
           </a>
         </div>

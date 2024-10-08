@@ -1,18 +1,18 @@
 const express = require('express');
 const router = express.Router();
-const Expense = require('../models/Expense'); // Asegúrate de que este modelo esté definido correctamente
+const Expense = require('../models/Expense'); 
 
-// Obtener todos los gastos
+
 router.get('/', async (req, res) => {
     try {
-        const expenses = await Expense.find().populate('category'); // Asegúrate de que la categoría esté poblada
+        const expenses = await Expense.find().populate('category'); 
         res.json(expenses);
     } catch (error) {
         res.status(500).json({ message: error.message });
     }
 });
 
-// Crear un nuevo gasto
+
 router.post('/', async (req, res) => {
     const { description, amount, date, category } = req.body;
     const expense = new Expense({
@@ -30,7 +30,6 @@ router.post('/', async (req, res) => {
     }
 });
 
-// Actualizar un gasto existente
 router.put('/:id', async (req, res) => {
     const { description, amount, date, category } = req.body;
     try {
@@ -50,7 +49,6 @@ router.put('/:id', async (req, res) => {
     }
 });
 
-// Eliminar un gasto
 router.delete('/:id', async (req, res) => {
     try {
         const deletedExpense = await Expense.findByIdAndDelete(req.params.id);
